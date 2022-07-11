@@ -1,0 +1,1196 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+/*
+	Theme Name: Elevator Status Responsive Angular Application
+	Description: A Responsive Handicap Accessible Angular Application
+	Author: Adrian Davis - Digital Platforms Producer
+	Author URI: http://www.septa.org/
+	Tags: Angular, Application, Responsive, Adaptive, Handicap Accessible, Color Blind
+*/
+@import url(https://fonts.googleapis.com/css?family=Oxygen:400,700);
+* {
+  transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+  -moz-transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+  -ms-transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+  -o-transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1); }
+
+html,
+body,
+button,
+input,
+select,
+textarea {
+  color: #222;
+  font-family: 'Oxygen', Arial, Helvetica, sans-serif; }
+
+html {
+  font-size: 1em;
+  line-height: 1.4;
+  background-color: #ededed; }
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+audio,
+canvas,
+img,
+video {
+  vertical-align: middle; }
+
+/*
+ * Remove default fieldset styles.
+ */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical; }
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+#container {
+  width: 100%;
+  margin: 0px auto;
+  overflow: hidden;
+  background-color: #fff; }
+
+nav {
+  background-color: #000E78;
+  color: #fff;
+  height: 30px; }
+  nav #logo img {
+    width: 110px;
+    height: 20px;
+    margin: .25em 0 0 .25em; }
+  nav #logo a {
+    width: 110px; }
+
+#septa-mobile {
+  display: none; }
+
+#septa-desktop {
+  display: block; }
+
+#title {
+  background-color: #fff;
+  color: #000E78;
+  font-weight: bold;
+  font-size: 2.2em;
+  text-align: center; }
+
+/*-- Preloader styles --*/
+.loading {
+  display: none; }
+
+[ng-cloak].loading {
+  display: block !important; }
+
+.loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: navy;
+  color: #fff;
+  text-align: center;
+  font-size: 3em; }
+  .loading img {
+    width: 50%;
+    height: 50%;
+    margin: 10% auto 2% auto;
+    display: block; }
+
+/*-- User Experience and User Interface Styles --*/
+.success {
+  display: none; }
+
+.operative.success {
+  display: block; }
+
+.operative {
+  background: #00C800; }
+
+.fail {
+  background: #ff0000; }
+
+.fail,
+.operative {
+  font-size: 1em;
+  color: #fff;
+  text-align: center;
+  padding: .5em; }
+  .fail strong,
+  .operative strong {
+    font-size: 1.25em; }
+  .fail a,
+  .operative a {
+    color: #fff; }
+
+/*-- set up --*/
+main {
+  background-color: #fff;
+  overflow: hidden; }
+
+article:focus .display {
+  background-color: rgba(255, 255, 255, 0.25);
+  outline: dotted thin; }
+article:focus .info {
+  max-height: 999999999999px;
+  transition: .5s ease-out;
+  -webkit-transition: .5s ease-out;
+  -moz-transition: .5s ease-out;
+  -ms-transition: .5s ease-out;
+  -o-transition: .5s ease-out; }
+
+/*---------------------------------------------------- experiment ----------------------------------------------------*/
+#mfl {
+  background-color: #007bc2; }
+
+#bsl {
+  background-color: #f58524; }
+
+#trolley {
+  background-color: #5d9532; }
+
+#nhsl {
+  background-color: #761c7d; }
+
+#regional-rail {
+  background-color: #3b6f91; }
+
+#mfl .display:before {
+  background-image: url("../img/mfl.svg"); }
+
+#bsl .display:before {
+  background-image: url("../img/bsl.svg"); }
+
+#trolley .display:before {
+  background-image: url("../img/trolley.svg"); }
+
+#nhsl .display:before {
+  background-image: url("../img/nhsl.svg"); }
+
+#regional-rail .display:before {
+  background-image: url("../img/regional-rail.svg"); }
+
+.line {
+  color: #fff;
+  width: 100%; }
+
+.display {
+  height: 60px;
+  font-size: 2.2em;
+  font-weight: bold;
+  line-height: 1.67em; }
+  .display:empty {
+    cursor: hand; }
+  .display:before {
+    background-size: 40px 40px;
+    content: '';
+    width: 40px;
+    height: 40px;
+    margin: .3em .2em 0em .2em;
+    float: left; }
+  .display:after, .display.error:after {
+    /* background-image: url('../img/error.svg'); */
+    background-size: 40px 40px;
+    content: '';
+    width: 40px;
+    height: 40px;
+    margin: .25em .25em 0em .25em;
+    float: right;
+    text-align: center;
+    line-height: .95em;
+    cursor: default; }
+  .display.update {
+    cursor: pointer; }
+  .display.update:after {
+    content: attr(data-service) !important;
+    background-image: none !important;
+    margin: .47em .25em 0em .25em; }
+  .display.good:after {
+    /* background-image: url('../img/check.svg'); */
+    background-size: 40px 40px;
+    content: '';
+    width: 40px;
+    height: 40px;
+    margin: .25em .25em 0em .25em;
+    float: right;
+    text-align: center;
+    line-height: .95em; }
+
+.info {
+  font-size: 1.5em;
+  overflow: hidden; }
+  .info :empty {
+    display: none; }
+  .info service-item:nth-child(odd) .service {
+    background-color: rgba(0, 0, 0, 0.25); }
+  .info service-item:nth-child(even) .service {
+    background-color: transparent; }
+  .info .service:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.25); }
+  .info .service > div:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.25); }
+  .info .service:nth-child(even) span > div {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25); }
+  .info .service:nth-child(odd) span > div {
+    border-bottom: 1px solid rgba(225, 225, 225, 0.25); }
+  .info .service a {
+    color: #fff; }
+  .info .service div {
+    height: auto;
+    overflow: hidden !important; }
+    .info .service div .wrapper {
+      width: 92.3%;
+      margin: .5em 1em .5em 0;
+      float: right; }
+    .info .service div .label {
+      font-weight: bold;
+      display: block; }
+  .info .alt-service {
+    height: auto; }
+    .info .alt-service p:first-of-type {
+      margin: 0; }
+  .info.close {
+    max-height: 0px;
+    transition: .5s ease-in;
+    -webkit-transition: .5s ease-in;
+    -moz-transition: .5s ease-in;
+    -ms-transition: .5s ease-in;
+    -o-transition: .5s ease-in; }
+  .info.open {
+    max-height: 999999999999px;
+    transition: .5s ease-out;
+    -webkit-transition: .5s ease-out;
+    -moz-transition: .5s ease-out;
+    -ms-transition: .5s ease-out;
+    -o-transition: .5s ease-out; }
+
+footer {
+  background-color: #fff;
+  padding: 1em;
+  overflow: hidden;
+  text-align: center; }
+  footer .notice {
+    margin: 0 0 1em 0; }
+  footer .copy {
+    font-weight: bold;
+    text-align: center; }
+
+/*---- Responsive -------------------------------------------------*/
+/*-- Feature phones ---------------------------- */
+@media only screen and (max-width: 320px) {
+  nav {
+    height: 30px; }
+    nav #logo img {
+      width: 110px;
+      height: 20px;
+      margin: .26em 0 0 .25em; }
+    nav #logo a {
+      width: 110px; }
+
+  #septa-mobile {
+    display: none; }
+
+  #septa-desktop {
+    display: block; }
+
+  #title {
+    font-size: 2.2em; }
+
+  .display {
+    height: 60px;
+    font-size: 2em;
+    line-height: 1.87em; }
+    .display:before {
+      background-size: 40px 40px;
+      content: '';
+      width: 40px;
+      height: 40px;
+      margin: .3em .2em 0em .2em; }
+    .display:after {
+      /* background-image: url('../img/error.svg'); */
+      background-size: 40px 40px;
+      content: '';
+      width: 40px;
+      height: 40px;
+      margin: .25em .25em 0em .25em;
+      line-height: .95em; }
+
+  .info {
+    font-size: 1.5em; }
+    .info :empty {
+      display: none; }
+    .info .service div .wrapper {
+      width: 95%;
+      margin: .5em auto;
+      float: none; }
+
+  footer section > span + span {
+    display: block; } }
+/*-- Feature phones ----------------------------*/
+@media only screen and (min-width: 321px) and (max-width: 360px) {
+  nav {
+    height: 30px; }
+    nav #logo img {
+      width: 110px;
+      height: 20px;
+      margin: .26em 0 0 .25em; }
+    nav #logo a {
+      width: 110px; }
+
+  #septa-mobile {
+    display: none; }
+
+  #septa-desktop {
+    display: block; }
+
+  #title {
+    font-size: 2.2em; }
+
+  .display {
+    height: 60px;
+    font-size: 2em;
+    line-height: 1.87em; }
+    .display:before {
+      background-size: 40px 40px;
+      content: '';
+      width: 40px;
+      height: 40px;
+      margin: .3em .2em 0em .2em; }
+    .display:after {
+      /* background-image: url('../img/error.svg'); */
+      background-size: 40px 40px;
+      content: '';
+      width: 40px;
+      height: 40px;
+      margin: .25em .25em 0em .25em;
+      line-height: .95em; }
+
+  .info {
+    font-size: 1.5em; }
+    .info :empty {
+      display: none; }
+    .info .service div .wrapper {
+      width: 82%;
+      margin: .5em .5em .5em 0; }
+
+  footer section > span + span {
+    display: block; } }
+/*-- Smartphones ---------------------------------- */
+@media only screen and (min-width: 361px) and (max-width: 480px) {
+  nav {
+    height: 40px; }
+    nav #logo img {
+      width: 147px;
+      height: 27px;
+      margin: .45em 0 0 .45em; }
+    nav #logo a {
+      width: 147px; }
+
+  #septa-mobile {
+    display: none; }
+
+  #septa-desktop {
+    display: block; }
+
+  .fail,
+  .operative {
+    font-size: 1.5em; }
+
+  #title {
+    font-size: 3.1em; }
+
+  .display {
+    height: 70px;
+    font-size: 2.2em;
+    line-height: 1.9em; }
+    .display:before {
+      background-size: 50px 50px;
+      content: '';
+      width: 50px;
+      height: 50px;
+      margin: .3em .2em 0em .2em; }
+    .display:after {
+      /* background-image: url('../img/error.svg'); */
+      background-size: 50px 50px;
+      content: '';
+      width: 50px;
+      height: 50px;
+      margin: .25em .25em 0em .25em;
+      line-height: .95em; }
+
+  .info {
+    font-size: 2em; }
+    .info :empty {
+      display: none; }
+    .info .service div .wrapper {
+      width: 85%;
+      float: right;
+      margin: .5em .3em .5em 0; }
+
+  footer section > span + span {
+    display: block; } }
+/*-- Small Tablets and Smartphones ----------- */
+@media only screen and (min-width: 481px) and (max-width: 640px) {
+  nav {
+    height: 60px; }
+    nav #logo img {
+      width: 196px;
+      height: 36px;
+      margin: .75em 0 0 .75em; }
+    nav #logo a {
+      width: 196px; }
+
+  #septa-mobile {
+    display: none; }
+
+  #septa-desktop {
+    display: block; }
+
+  .fail,
+  .operative {
+    font-size: 2em; }
+
+  #title {
+    font-size: 4.04em; }
+
+  .display {
+    height: 90px;
+    font-size: 3.13em;
+    line-height: 1.7em; }
+    .display:before {
+      background-size: 48px 48px;
+      content: '';
+      width: 48px;
+      height: 48px;
+      margin: 0.4em 0.25em 0em 0.25em; }
+    .display:after {
+      /* background-image: url('../img/error.svg'); */
+      background-size: 48px 48px;
+      content: '';
+      width: 48px;
+      height: 48px;
+      margin: 0.4em 0.25em 0em 0.25em;
+      line-height: .95em; }
+    .display.update:after {
+      content: attr(data-service) !important;
+      background-image: none !important;
+      margin: .35em .5em 0em .25em; }
+    .display.good:after {
+      /* background-image: url('../img/check.svg'); */
+      background-size: 48px 48px;
+      content: '';
+      width: 48px;
+      height: 48px;
+      margin: 0.4em 0.25em 0em 0.25em;
+      line-height: .95em; }
+
+  .info {
+    font-size: 2em; }
+    .info :empty {
+      display: none; }
+    .info .service div .wrapper {
+      width: 85%;
+      float: right;
+      margin: .5em .5em .5em 0; } }
+@media only screen and (min-width: 641px) and (max-width: 767px) {
+  #container {
+    width: 95%; }
+
+  nav {
+    height: 65px; }
+    nav #logo img {
+      width: 235px;
+      height: 43px;
+      margin: .75em 0 0 .75em; }
+    nav #logo a {
+      width: 235px; }
+
+  #septa-mobile {
+    display: none; }
+
+  #septa-desktop {
+    display: block; }
+
+  .fail,
+  .operative {
+    font-size: 1.25em; }
+
+  #title {
+    font-size: 5.1em; }
+
+  .display {
+    height: 107px;
+    font-size: 4em;
+    line-height: 1.6em; }
+    .display:before {
+      background-size: 64px 64px;
+      content: '';
+      width: 64px;
+      height: 64px;
+      margin: .35em .2em 0em .2em; }
+    .display:after {
+      /* background-image: url('../img/error.svg'); */
+      background-size: 64px 64px;
+      content: '';
+      width: 64px;
+      height: 64px;
+      margin: .3em .25em 0em .25em;
+      line-height: .95em; }
+    .display.update:after {
+      content: attr(data-service) !important;
+      background-image: none !important;
+      margin: .32em .5em 0em .25em; }
+    .display.good:after {
+      /* background-image: url('../img/check.svg'); */
+      background-size: 64px 64px;
+      content: '';
+      width: 64px;
+      height: 64px;
+      margin: .3em .25em 0em .25em;
+      line-height: .95em; }
+
+  .info {
+    font-size: 1.5em; }
+    .info :empty {
+      display: none; }
+    .info .service {
+      overflow: hidden !important; }
+      .info .service:nth-child(even) span > div {
+        border: none; }
+      .info .service:nth-child(odd) span > div {
+        border: none; }
+      .info .service div .wrapper {
+        width: auto;
+        float: none;
+        margin: 0 0 .5em 0; }
+      .info .service .group {
+        width: 80%;
+        margin: .5em 0 0 12.5%;
+        float: left; }
+      .info .service .impact div span + span {
+        display: block; }
+    .info .alt-service {
+      width: 80%;
+      margin: .5em 0 .5em 12.5%;
+      float: left; } }
+/*-- Tablets and Small Desktops ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #container {
+    width: 95%; }
+
+  nav {
+    height: 103px; }
+    nav #logo img {
+      width: 314px;
+      height: 57px;
+      margin: 1.5em 0 0 1.5em; }
+    nav #logo a {
+      width: 314px; }
+
+  #septa-mobile {
+    display: none; }
+
+  #septa-desktop {
+    display: block; }
+
+  .fail,
+  .operative {
+    font-size: 1.75em; }
+
+  #title {
+    font-size: 6.21em; }
+
+  .display {
+    height: 100px;
+    font-size: 4.68em;
+    line-height: 1.3em; }
+    .display:before {
+      background-size: 64px 64px;
+      content: '';
+      width: 64px;
+      height: 64px;
+      margin: 0.25em 0.2em 0em 0.2em; }
+    .display:after {
+      /* background-image: url('../img/error.svg'); */
+      background-size: 64px 64px;
+      content: '';
+      width: 64px;
+      height: 64px;
+      margin: 0.25em 0.25em 0em 0.25em;
+      line-height: .95em; }
+    .display.update:after {
+      content: attr(data-service) !important;
+      background-image: none !important;
+      margin: .175em .5em 0em .25em; }
+    .display.good:after {
+      /* background-image: url('../img/check.svg'); */
+      background-size: 64px 64px;
+      content: '';
+      width: 64px;
+      height: 64px;
+      margin: 0.25em 0.25em 0em 0.25em;
+      line-height: .95em; }
+
+  .info {
+    font-size: 1.5em; }
+    .info :empty {
+      display: none; }
+    .info .service {
+      overflow: hidden !important; }
+      .info .service:nth-child(even) span > div {
+        border: none; }
+      .info .service:nth-child(odd) span > div {
+        border: none; }
+      .info .service div .wrapper {
+        width: auto;
+        float: none;
+        margin: 0 0 .5em 0; }
+      .info .service .group {
+        width: 80%;
+        margin: .5em 0 0 10.3%;
+        float: left; }
+      .info .service .impact div span + span {
+        display: block; }
+    .info .alt-service {
+      width: 80%;
+      margin: .5em 0 .5em 10.3%;
+      float: left; } }
+/*-- Desktops and laptops ----------- */
+@media only screen and (min-width: 1025px) and (max-width: 1279px) {
+  #container {
+    width: 80%; }
+
+  nav {
+    height: 103px; }
+    nav #logo img {
+      width: 314px;
+      height: 57px;
+      margin: 1.5em 0 0 1.5em; }
+    nav #logo a {
+      width: 314px; }
+
+  #septa-mobile {
+    display: none; }
+
+  #septa-desktop {
+    display: block; }
+
+  .fail,
+  .operative {
+    font-size: 1.75em; }
+
+  #title {
+    font-size: 6.6em; }
+
+  .display {
+    height: 142px;
+    font-size: 5.1em;
+    line-height: 1.7em; }
+    .display:before {
+      background-size: 85px 85px;
+      content: '';
+      width: 85px;
+      height: 85px;
+      margin: .35em .2em 0em .2em; }
+    .display:after {
+      /* background-image: url('../img/error.svg'); */
+      background-size: 85px 85px;
+      content: '';
+      width: 85px;
+      height: 85px;
+      margin: .3em .25em 0em .25em;
+      line-height: .95em; }
+    .display.update:after {
+      content: attr(data-service) !important;
+      background-image: none !important;
+      margin: .35em .4em 0em .25em; }
+    .display.good:after {
+      /* background-image: url('../img/check.svg'); */
+      background-size: 85px 85px;
+      content: '';
+      width: 85px;
+      height: 85px;
+      margin: .3em .25em 0em .25em;
+      line-height: .95em; }
+
+  .info {
+    font-size: 1.5em; }
+    .info :empty {
+      display: none; }
+    .info .service {
+      overflow: hidden !important; }
+      .info .service:nth-child(even) span > div {
+        border: none; }
+      .info .service:nth-child(odd) span > div {
+        border: none; }
+      .info .service div .wrapper {
+        width: auto;
+        float: none;
+        margin: 0 0 .5em 0; }
+      .info .service .group {
+        width: 80%;
+        margin: .5em 0 0 12%;
+        float: left; }
+      .info .service .impact div span + span {
+        display: block; }
+    .info .alt-service {
+      width: 80%;
+      margin: .5em 0 .5em 12%;
+      float: left; } }
+/*-- Large Desktops and TV Screens ----------------------------*/
+@media only screen and (min-width: 1280px) and (max-width: 1499px) {
+  #container {
+    width: 80%; }
+
+  nav {
+    height: 125px; }
+    nav #logo img {
+      width: 460px;
+      height: 84px;
+      margin: 1.5em 0 0 1.5em; }
+    nav #logo a {
+      width: 460px; }
+
+  #septa-mobile {
+    display: none; }
+
+  #septa-desktop {
+    display: block; }
+
+  .fail,
+  .operative {
+    font-size: 2em; }
+
+  #title {
+    font-size: 6.6em; }
+
+  .display {
+    height: 142px;
+    font-size: 5.1em;
+    line-height: 1.7em; }
+    .display:before {
+      background-size: 85px 85px;
+      content: '';
+      width: 85px;
+      height: 85px;
+      margin: .35em .2em 0em .2em; }
+    .display:after {
+      /* background-image: url('../img/error.svg'); */
+      background-size: 85px 85px;
+      content: '';
+      width: 85px;
+      height: 85px;
+      margin: .3em .25em 0em .25em;
+      line-height: .95em; }
+    .display.update:after {
+      content: attr(data-service) !important;
+      background-image: none !important;
+      margin: .35em .4em 0em .25em; }
+    .display.good:after {
+      /* background-image: url('../img/check.svg'); */
+      background-size: 85px 85px;
+      content: '';
+      width: 85px;
+      height: 85px;
+      margin: .3em .25em 0em .25em;
+      line-height: .95em; }
+
+  .info {
+    font-size: 1.5em; }
+    .info :empty {
+      display: none; }
+    .info .service {
+      overflow: hidden !important; }
+      .info .service:nth-child(even) span > div {
+        border: none; }
+      .info .service:nth-child(odd) span > div {
+        border: none; }
+      .info .service div .wrapper {
+        width: auto;
+        float: none;
+        margin: 0 0 .5em 0; }
+      .info .service .group {
+        width: 80%;
+        margin: .5em 0 0 10.4%;
+        float: left; }
+      .info .service .impact div span + span {
+        display: block; }
+    .info .alt-service {
+      width: 80%;
+      margin: .5em 0 .5em 10.4%;
+      float: left; } }
+/*-- Large Desktops and TV Screens ----------------------------*/
+@media only screen and (min-width: 1500px) and (max-width: 1920px) {
+  #container {
+    width: 80%; }
+
+  nav {
+    height: 125px; }
+    nav #logo img {
+      width: 460px;
+      height: 84px;
+      margin: 1.5em 0 0 1.5em; }
+    nav #logo a {
+      width: 460px; }
+
+  #septa-mobile {
+    display: none; }
+
+  #septa-desktop {
+    display: block; }
+
+  .fail,
+  .operative {
+    font-size: 2.5em; }
+
+  #title {
+    font-size: 6.6em; }
+
+  .display {
+    height: 142px;
+    font-size: 6.3em;
+    line-height: 1.5em; }
+    .display:before {
+      background-size: 85px 85px;
+      content: '';
+      width: 85px;
+      height: 85px;
+      margin: .35em .2em 0em .2em; }
+    .display:after {
+      /* background-image: url('../img/error.svg'); */
+      background-size: 85px 85px;
+      content: '';
+      width: 85px;
+      height: 85px;
+      margin: .3em .25em 0em .25em;
+      line-height: .95em; }
+    .display.update:after {
+      content: attr(data-service) !important;
+      background-image: none !important;
+      margin: .27em .6em 0em .25em; }
+    .display.good:after {
+      /* background-image: url('../img/check.svg'); */
+      background-size: 85px 85px;
+      content: '';
+      width: 85px;
+      height: 85px;
+      margin: .3em .25em 0em .25em;
+      line-height: .95em; }
+
+  .info {
+    font-size: 1.5em; }
+    .info :empty {
+      display: none; }
+    .info .service {
+      overflow: hidden !important; }
+      .info .service:nth-child(even) span > div {
+        border: none; }
+      .info .service:nth-child(odd) span > div {
+        border: none; }
+      .info .service div .wrapper {
+        width: auto;
+        float: none;
+        margin: 0 0 .5em 0; }
+      .info .service .group {
+        width: 80%;
+        margin: .5em 0 0 8.7%;
+        float: left; }
+      .info .service .impact div span + span {
+        display: block; }
+    .info .alt-service {
+      width: 80%;
+      margin: .5em 0 .5em 8.7%;
+      float: left; } }
+/*-- Dual Monitors and TV Screens ----------------------------*/
+@media only screen and (min-width: 1921px) {
+  #container {
+    width: 100%; }
+
+  nav {
+    height: 125px; }
+    nav #logo img {
+      width: 460px;
+      height: 84px;
+      margin: 1.5em 0 0 1.5em; }
+    nav #logo a {
+      width: 460px; }
+
+  #septa-mobile {
+    display: none; }
+
+  #septa-desktop {
+    display: block; }
+
+  .fail,
+  .operative {
+    font-size: 3em; }
+
+  #title {
+    font-size: 6.6em; }
+
+  .line {
+    width: 50%;
+    float: left; }
+
+  .display {
+    height: 142px;
+    font-size: 6.3em;
+    line-height: 1.5em; }
+    .display:before {
+      background-size: 85px 85px;
+      content: '';
+      width: 85px;
+      height: 85px;
+      margin: .35em .2em 0em .2em; }
+    .display:after {
+      /* background-image: url('../img/error.svg'); */
+      background-size: 85px 85px;
+      content: '';
+      width: 85px;
+      height: 85px;
+      margin: .3em .25em 0em .25em;
+      line-height: .95em; }
+    .display.update:after {
+      content: attr(data-service) !important;
+      background-image: none !important;
+      margin: .27em .25em 0em .25em; }
+    .display.good:after {
+      /* background-image: url('../img/check.svg'); */
+      background-size: 85px 85px;
+      content: '';
+      width: 85px;
+      height: 85px;
+      margin: .3em .25em 0em .25em;
+      line-height: .95em; }
+
+  .info {
+    font-size: 1.5em; }
+    .info :empty {
+      display: none; }
+    .info .service {
+      overflow: hidden !important; }
+      .info .service:nth-child(even) span > div {
+        border: none; }
+      .info .service:nth-child(odd) span > div {
+        border: none; }
+      .info .service div .wrapper {
+        width: auto;
+        float: none;
+        margin: 0 0 .5em 0; }
+      .info .service .group {
+        width: 80%;
+        margin: .5em 0 0 8.7%;
+        float: left; }
+      .info .service .impact div span + span {
+        display: block; }
+    .info .alt-service {
+      width: 80%;
+      margin: .5em 0 .5em 8.7%;
+      float: left; }
+
+  footer {
+    width: 100%; } }
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Image replacement
+ */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px; }
+
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%; }
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+.invisible {
+  visibility: hidden; }
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *	`contenteditable` attribute is included anywhere else in the document.
+ *	Otherwise it causes space to appear at the top and bottom of elements
+ *	that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *	`:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.clearfix:after {
+  clear: both; }
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+  *zoom: 1; }
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media print, (-o-min-pixel-ratio: 5 / 4), (-webkit-min-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */ }
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important; }
+
+  a,
+  a:visited {
+    text-decoration: underline; }
+
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: ""; }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */ }
+
+  tr,
+  img {
+    page-break-inside: avoid; }
+
+  img {
+    max-width: 100% !important; }
+
+  @page {
+    margin: 0.5cm; }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+
+  h2,
+  h3 {
+    page-break-after: avoid; } }
+
+/*# sourceMappingURL=main.css.map */

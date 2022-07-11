@@ -1,0 +1,735 @@
+{
+	"meta": {
+		"elevators_out": 104,
+		"updated": "2016-02-19 10:52:22"
+	},
+	"results": [{
+		"line": "Broad Street Subway \/ Broad Ridge Spur",
+		"station": "Fern Rock",
+		"elevator": "Street Level",
+		"message": "No access to\/from station",
+		"message_html": "<ul><li>No access to\/from station<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_bsl.html"
+	}, {
+		"line": "Broad Street Subway \/ Broad Ridge Spur",
+		"station": "Olney Transportation Center",
+		"elevator": "Street to Mezzanine",
+		"message": "No access to\/from station",
+		"message_html": "<ul><li>No access to\/from station<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_bsl.html"
+	}, {
+		"line": "Broad Street Subway \/ Broad Ridge Spur",
+		"station": "Olney Transportation Center",
+		"elevator": "Northbound Platform",
+		"message": "No access to\/from northbound platform",
+		"message_html": "<ul><li>No access to\/from northbound platform<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_bsl.html"
+	}, {
+		"line": "Broad Street Subway \/ Broad Ridge Spur",
+		"station": "Olney Transportation Center",
+		"elevator": "Southbound Platform",
+		"message": "No access to\/from southbound platform ",
+		"message_html": "<ul><li>No access to\/from southbound platform<\/li><\/ul> ",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_bsl.html"
+	}, {
+		"line": "Broad Street Subway \/ Broad Ridge Spur",
+		"station": "Cecil B. Moore",
+		"elevator": "Northbound Platform",
+		"message": "No access to\/from northbound platform",
+		"message_html": "<ul><li>No access to\/from northbound platform<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_bsl.html"
+	}, {
+		"line": "Broad Street Subway \/ Broad Ridge Spur",
+		"station": "Cecil B. Moore",
+		"elevator": "Southbound Platform",
+		"message": "No access to\/from southbound platform",
+		"message_html": "<ul><li>No access to\/from southbound platform<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_bsl.html"
+	}, {
+		"line": "Broad Street Subway \/ Broad Ridge Spur",
+		"station": "Walnut-Locust",
+		"elevator": "Street to Concourse",
+		"message": "No access to\/from station",
+		"message_html": "<ul><li>No access to\/from station<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_bsl.html"
+	}, {
+		"line": "Broad Street Subway \/ Broad Ridge Spur",
+		"station": "Walnut-Locust",
+		"elevator": "Northbound",
+		"message": "No access to\/from northbound platform",
+		"message_html": "<ul><li>No access to\/from northbound platform<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_bsl.html"
+	}, {
+		"line": "Broad Street Subway \/ Broad Ridge Spur",
+		"station": "Walnut-Locust",
+		"elevator": "Southbound",
+		"message": "No access to\/from southbound platform",
+		"message_html": "<ul><li>No access to\/from southbound platform<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_bsl.html"
+	}, {
+		"line": "Broad Street Subway \/ Broad Ridge Spur",
+		"station": "AT&T Station",
+		"elevator": "Street Level",
+		"message": "No access to\/from station",
+		"message_html": "<ul><li>No access to\/from station<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_bsl.html"
+	}, {
+		"line": "Broad Street Subway \/ Broad Ridge Spur",
+		"station": "Broad Ridge Spur <br \/> 8th &amp; Market ",
+		"elevator": "Street Level",
+		"message": "No access to\/from station",
+		"message_html": "<ul><li>No access to\/from station<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_bsl.html"
+	}, {
+		"line": "Broad Street Subway \/ Broad Ridge Spur",
+		"station": "Oregon",
+		"elevator": "Street Level",
+		"message": "No access to\/from station",
+		"message_html": "<ul><li>No access to\/from station<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_bsl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "Frankford Transportation Center",
+		"elevator": "Historic Bridge Street Terminal",
+		"message": "Use Bridge Street for access to\/from station",
+		"message_html": "<ul><li>Use Bridge Street for access to\/from station<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "Frankford Transportation Center",
+		"elevator": "Main Terminal Bridge Street",
+		"message": "Use Pratt Street for access to\/from platforms",
+		"message_html": "<ul><li>Use Pratt Street for access to\/from platforms<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "Frankford Transportation Center",
+		"elevator": "Main Terminal Pratt Street",
+		"message": "Use Bridge Street for access to\/from platforms",
+		"message_html": "<ul><li>Use Bridge Street for access to\/from platforms<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "Frankford Transportation Center",
+		"elevator": "Garage No. 3 <br \/>(Crossover)",
+		"message": "No access to\/from street to parking garage",
+		"message_html": "<ul><li>No access to\/from street to parking garage<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "Frankford Transportation Center",
+		"elevator": "Garage No. 2",
+		"message": "No access to garage parking floors",
+		"message_html": "<ul><li>No access to garage parking floors<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "Frankford Transportation Center",
+		"elevator": "Garage No. 1",
+		"message": "No access to garage parking floors",
+		"message_html": "<ul><li>No access to garage parking floors<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "Church Street",
+		"elevator": "Westbound",
+		"message": "No access to\/from station",
+		"message_html": "<ul><li>No access to\/from station<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "Church Street",
+		"elevator": "Eastbound",
+		"message": "No access to\/from eastbound platform",
+		"message_html": "<ul><li>No access to\/from eastbound platform<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "Erie-Torresdale",
+		"elevator": "Westbound",
+		"message": "No access to\/from station",
+		"message_html": "<ul><li>No access to\/from station<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "Erie-Torresdale",
+		"elevator": "Eastbound",
+		"message": "No access to\/from eastbound platform",
+		"message_html": "<ul><li>No access to\/from eastbound platform<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "Tioga",
+		"elevator": "Westbound",
+		"message": "No access to\/from station",
+		"message_html": "<ul><li>No access to\/from station<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "Tioga",
+		"elevator": "Eastbound",
+		"message": "No access to\/from eastbound platform",
+		"message_html": "<ul><li>No access to\/from eastbound platform<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "Allegheny",
+		"elevator": "Westbound",
+		"message": "No access to\/from station",
+		"message_html": "<ul><li>No access to\/from station<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "Allegheny",
+		"elevator": "Eastbound",
+		"message": "No access to\/from eastbound platform",
+		"message_html": "<ul><li>No access to\/from eastbound platform<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "Somerset",
+		"elevator": "Westbound ",
+		"message": "No access to\/from station",
+		"message_html": "<ul><li>No access to\/from station<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "Somerset",
+		"elevator": "Eastbound",
+		"message": "No access to\/from eastbound platform",
+		"message_html": "<ul><li>No access to\/from eastbound platform<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "Huntingdon",
+		"elevator": "Westbound ",
+		"message": "No access to\/from station",
+		"message_html": "<ul><li>No access to\/from station<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "Huntingdon",
+		"elevator": "Eastbound",
+		"message": "No access to\/from eastbound platform",
+		"message_html": "<ul><li>No access to\/from eastbound platform<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "York-Dauphin",
+		"elevator": "Westbound ",
+		"message": "No access to\/from station",
+		"message_html": "<ul><li>No access to\/from station<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "York-Dauphin",
+		"elevator": "Eastbound",
+		"message": "No access to\/from eastbound platform",
+		"message_html": "<ul><li>No access to\/from eastbound platform<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "Berks",
+		"elevator": "Westbound ",
+		"message": "No access to\/from station",
+		"message_html": "<ul><li>No access to\/from station<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "Berks",
+		"elevator": "Eastbound",
+		"message": "No access to\/from eastbound platform",
+		"message_html": "<ul><li>No access to\/from eastbound platform<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "Girard",
+		"elevator": "Westbound ",
+		"message": "No access to\/from station",
+		"message_html": "<ul><li>No access to\/from station<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "Girard",
+		"elevator": "Eastbound",
+		"message": "No access to\/from eastbound platform",
+		"message_html": "<ul><li>No access to\/from eastbound platform<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "2nd Street",
+		"elevator": "Westbound",
+		"message": "No access to\/from westbound platform",
+		"message_html": "<ul><li>No access to\/from westbound platform<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "2nd Street",
+		"elevator": "Eastbound",
+		"message": "No access to\/from eastbound platform",
+		"message_html": "<ul><li>No access to\/from eastbound platform<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "8th Street",
+		"elevator": "Westbound",
+		"message": "No access to\/from station",
+		"message_html": "<ul><li>No access to\/from station<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "8th Street",
+		"elevator": "Eastbound (City of Philadelphia)",
+		"message": "No access to\/from station",
+		"message_html": "<ul><li>No access to\/from station<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "13th Street",
+		"elevator": "Westbound",
+		"message": "No access to\/from stationNo access to\/from Trolley Lines",
+		"message_html": "<ul><li>No access to\/from station<\/li><li>No access to\/from Trolley Lines<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "13th Street",
+		"elevator": "Eastbound",
+		"message": "No access to\/from station",
+		"message_html": "<ul><li>No access to\/from station<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "30th Street",
+		"elevator": "Street to Mezzanine",
+		"message": "No access to\/from station",
+		"message_html": "<ul><li>No access to\/from station<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "30th Street",
+		"elevator": "Mezzanine to Platform",
+		"message": "No access to\/from east and westbound platformNo access to\/from Trolley Lines",
+		"message_html": "<ul><li>No access to\/from east and westbound platform<\/li><li>No access to\/from Trolley Lines<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "46th Street",
+		"elevator": "Eastbound",
+		"message": "No access to\/from station",
+		"message_html": "<ul><li>No access to\/from station<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "46th Street",
+		"elevator": "Westbound",
+		"message": "No access to\/from westbound platform",
+		"message_html": "<ul><li>No access to\/from westbound platform<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "52nd Street",
+		"elevator": "Eastbound",
+		"message": "No access to\/from station",
+		"message_html": "<ul><li>No access to\/from station<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "52nd Street",
+		"elevator": "Westbound",
+		"message": "No access to\/from westbound platform",
+		"message_html": "<ul><li>No access to\/from westbound platform<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "56th Street",
+		"elevator": "Eastbound",
+		"message": "No access to\/from station",
+		"message_html": "<ul><li>No access to\/from station<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "56th Street",
+		"elevator": "Westbound",
+		"message": "No access to\/from westbound platform",
+		"message_html": "<ul><li>No access to\/from westbound platform<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "60th Street",
+		"elevator": "Eastbound",
+		"message": "No access to\/from eastbound platform",
+		"message_html": "<ul><li>No access to\/from eastbound platform<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "60th Street",
+		"elevator": "Westbound",
+		"message": "No access to\/from westbound platform",
+		"message_html": "<ul><li>No access to\/from westbound platform<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "63rd Street",
+		"elevator": "Eastbound",
+		"message": "No access to\/from station",
+		"message_html": "<ul><li>No access to\/from station<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "63rd Street",
+		"elevator": "Westbound",
+		"message": "No access to\/from westbound platform",
+		"message_html": "<ul><li>No access to\/from westbound platform<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "Millbourne",
+		"elevator": "Eastbound",
+		"message": "No access to\/from station",
+		"message_html": "<ul><li>No access to\/from station<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "Millbourne",
+		"elevator": "Westbound",
+		"message": "No access to\/from westbound platform",
+		"message_html": "<ul><li>No access to\/from westbound platform<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "69th Street Terminal",
+		"elevator": "Eastbound",
+		"message": "No access to\/from eastbound platform",
+		"message_html": "<ul><li>No access to\/from eastbound platform<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "69th Street Terminal",
+		"elevator": "Westbound",
+		"message": "No access to\/from westbound platform",
+		"message_html": "<ul><li>No access to\/from westbound platform<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Trolley Lines",
+		"station": "30th Street",
+		"elevator": "Street to Mezzanine",
+		"message": "No access to\/from station",
+		"message_html": "<ul><li>No access to\/from station<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_sub_surface.html"
+	}, {
+		"line": "Trolley Lines",
+		"station": "30th Street",
+		"elevator": "Westbound",
+		"message": "No access to\/from westbound Trolley Lines",
+		"message_html": "<ul><li>No access to\/from westbound Trolley Lines<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_sub_surface.html"
+	}, {
+		"line": "Trolley Lines",
+		"station": "30th Street",
+		"elevator": "Eastbound",
+		"message": "No access to\/from eastbound Trolley Lines",
+		"message_html": "<ul><li>No access to\/from eastbound Trolley Lines<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_sub_surface.html"
+	}, {
+		"line": "Trolley Lines",
+		"station": "13th Street Trolley",
+		"elevator": "13th Street Westbound MFL Platform",
+		"message": "No access to\/from stationNo access to\/from Market Frankford Line 13th St - westbound",
+		"message_html": "<ul><li>No access to\/from station<\/li><li>No access to\/from Market Frankford Line 13th St - westbound<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_sub_surface.html"
+	}, {
+		"line": "Norristown High Speed Line",
+		"station": "Norristown Transportation Center",
+		"elevator": "Street Level",
+		"message": "No access to\/from station",
+		"message_html": "<ul><li>No access to\/from station<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_nhsl.html"
+	}, {
+		"line": "Regional Rail",
+		"station": "University City",
+		"elevator": "Street Level",
+		"message": "No access to\/from station",
+		"message_html": "<ul><li>No access to\/from station<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_rrd.html"
+	}, {
+		"line": "Regional Rail",
+		"station": "30th Street",
+		"elevator": "\"A\" Platform",
+		"message": "No access to\/from Tracks 1 and 2",
+		"message_html": "<ul><li>No access to\/from Tracks 1 and 2<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_rrd.html"
+	}, {
+		"line": "Regional Rail",
+		"station": "30th Street",
+		"elevator": "\"B\" Platform",
+		"message": "No access to\/from Tracks 5 and 6",
+		"message_html": "<ul><li>No access to\/from Tracks 5 and 6<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_rrd.html"
+	}, {
+		"line": "Regional Rail",
+		"station": "30th Street",
+		"elevator": "\"C\" Platform",
+		"message": "No access to\/from Tracks 3 and 4",
+		"message_html": "<ul><li>No access to\/from Tracks 3 and 4<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_rrd.html"
+	}, {
+		"line": "Regional Rail",
+		"station": "Suburban Station",
+		"elevator": "Street to Concourse<br \/> (16th &amp; JFK)",
+		"message": "No access to\/from station & concourse",
+		"message_html": "<ul><li>No access to\/from station & concourse<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_rrd.html"
+	}, {
+		"line": "Regional Rail",
+		"station": "Suburban Station",
+		"elevator": "Street to Concourse<br \/> (17th &amp; JFK)",
+		"message": "No access to\/from station & concourse",
+		"message_html": "<ul><li>No access to\/from station & concourse<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_rrd.html"
+	}, {
+		"line": "Regional Rail",
+		"station": "Suburban Station",
+		"elevator": "Concourse to<br \/>Tracks 1 &amp; 2",
+		"message": "No access to\/from Tracks 1 & 2",
+		"message_html": "<ul><li>No access to\/from Tracks 1 & 2<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_rrd.html"
+	}, {
+		"line": "Regional Rail",
+		"station": "Suburban Station",
+		"elevator": "Concourse to<br \/>Tracks 3 &amp; 4",
+		"message": "No access to\/from Tracks 3 & 4",
+		"message_html": "<ul><li>No access to\/from Tracks 3 & 4<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_rrd.html"
+	}, {
+		"line": "Regional Rail",
+		"station": "Suburban Station",
+		"elevator": "Concourse to<br \/>Track 5",
+		"message": "No access to\/from Track  5",
+		"message_html": "<ul><li>No access to\/from Track  5<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_rrd.html"
+	}, {
+		"line": "Regional Rail",
+		"station": "Suburban Station",
+		"elevator": "Concourse to<br \/>Tracks 6 &amp; 7",
+		"message": "No access to\/from Tracks 6 & 7",
+		"message_html": "<ul><li>No access to\/from Tracks 6 & 7<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_rrd.html"
+	}, {
+		"line": "Regional Rail",
+		"station": "Market East",
+		"elevator": "Street to Tracks 1 &amp; 2 via Concourse<br \/> (10th and Filbert)",
+		"message": "No access to\/from station & concourse - B Section ",
+		"message_html": "<ul><li>No access to\/from station & concourse - B Section <\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_rrd.html"
+	}, {
+		"line": "Regional Rail",
+		"station": "Market East",
+		"elevator": "Street to Tracks 3 &amp; 4 via Concourse<br \/> (10th and Filbert)",
+		"message": "No access to\/from station & concourse - B Section",
+		"message_html": "<ul><li>No access to\/from station & concourse - B Section<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_rrd.html"
+	}, {
+		"line": "Regional Rail",
+		"station": "Market East",
+		"elevator": "Street to Tracks 1 &amp; 2 via Concourse<br \/> (12th and Filbert)",
+		"message": "No access to\/from station & concourse - A Section ",
+		"message_html": "<ul><li>No access to\/from station & concourse - A Section <\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_rrd.html"
+	}, {
+		"line": "Regional Rail",
+		"station": "Market East",
+		"elevator": "Street to Tracks 3 &amp; 4 via Concourse<br \/> (12th &amp; Filbert)",
+		"message": "No access to\/from station & concourse - A Section",
+		"message_html": "<ul><li>No access to\/from station & concourse - A Section<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_rrd.html"
+	}, {
+		"line": "Regional Rail",
+		"station": "Temple University",
+		"elevator": "Outbound",
+		"message": "No access to\/from outbound platform (service from Center City)",
+		"message_html": "<ul><li>No access to\/from outbound platform (service from Center City)<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_rrd.html"
+	}, {
+		"line": "Regional Rail",
+		"station": "Temple University",
+		"elevator": "Inbound",
+		"message": "No access to\/from inbound platform (towards Center City)",
+		"message_html": "<ul><li>No access to\/from inbound platform (towards Center City)<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_rrd.html"
+	}, {
+		"line": "Regional Rail",
+		"station": "Fern Rock Transportation Center",
+		"elevator": "Outbound",
+		"message": "No access to\/from outbound platform (service from Center City)",
+		"message_html": "<ul><li>No access to\/from outbound platform (service from Center City)<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_rrd.html"
+	}, {
+		"line": "Regional Rail",
+		"station": "Fern Rock Transportation Center",
+		"elevator": "Inbound",
+		"message": "No access to\/from inbound platform (service towards Center City) No access to\/from the Broad Street Subway",
+		"message_html": "<ul><li>No access to\/from inbound platform (service towards Center City) <\/li><li>No access to\/from the Broad Street Subway<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_rrd.html"
+	}, {
+		"line": "69th Street North Bus Terminal",
+		"station": "69th Street Trans. Ctr. (Bus)",
+		"elevator": "Street Level",
+		"message": "No access to\/from Bus Routes #30, 65,103,105 & 106",
+		"message_html": "<ul><li>No access to\/from Bus Routes #30, 65,103,105 & 106<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_ntbus.html"
+	}, {
+		"line": "Broad Street Subway \/ Broad Ridge Spur",
+		"station": "North Philadelphia",
+		"elevator": "Street to Mezzanine",
+		"message": "No access to\/from station",
+		"message_html": "<ul><li>No access to\/from station<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_bsl.html"
+	}, {
+		"line": "Broad Street Subway \/ Broad Ridge Spur",
+		"station": "North Philadelphia",
+		"elevator": "Southbound",
+		"message": "No access to\/from southbound platform ",
+		"message_html": "<ul><li>No access to\/from southbound platform<\/li><\/ul> ",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_bsl.html"
+	}, {
+		"line": "Broad Street Subway \/ Broad Ridge Spur",
+		"station": "North Philadelphia",
+		"elevator": "Northbound",
+		"message": "No access to\/from northbound platform",
+		"message_html": "<ul><li>No access to\/from northbound platform<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_bsl.html"
+	}, {
+		"line": "Broad Street Subway \/ Broad Ridge Spur",
+		"station": "Allegheny",
+		"elevator": "Northbound Platform",
+		"message": "No access to\/from northbound platform",
+		"message_html": "<ul><li>No access to\/from northbound platform<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_bsl.html"
+	}, {
+		"line": "Broad Street Subway \/ Broad Ridge Spur",
+		"station": "Allegheny",
+		"elevator": "Southbound Platform",
+		"message": "No access to\/from southbound platform ",
+		"message_html": "<ul><li>No access to\/from southbound platform<\/li><\/ul> ",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_bsl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "5th Street",
+		"elevator": "Eastbound",
+		"message": "No access to\/from eastbound platform",
+		"message_html": "<ul><li>No access to\/from eastbound platform<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "5th Street",
+		"elevator": "Westbound",
+		"message": "No access to\/from westbound platform",
+		"message_html": "<ul><li>No access to\/from westbound platform<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Broad Street Subway \/ Broad Ridge Spur",
+		"station": "Girard",
+		"elevator": "Southbound Platform",
+		"message": "No access to\/from southbound platform",
+		"message_html": "<ul><li>No access to\/from southbound platform<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_bsl.html"
+	}, {
+		"line": "Broad Street Subway \/ Broad Ridge Spur",
+		"station": "Girard",
+		"elevator": "Northbound Platform",
+		"message": "No access to\/from northbound platform",
+		"message_html": "<ul><li>No access to\/from northbound platform<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_bsl.html"
+	}, {
+		"line": "Broad Street Subway \/ Broad Ridge Spur",
+		"station": "Girard",
+		"elevator": "Street to Mezzanine",
+		"message": "No access to\/from station",
+		"message_html": "<ul><li>No access to\/from station<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_bsl.html"
+	}, {
+		"line": "Broad Street Subway \/ Broad Ridge Spur",
+		"station": "Spring Garden",
+		"elevator": "Southbound Platform",
+		"message": "No access to\/from southbound platform",
+		"message_html": "<ul><li>No access to\/from southbound platform<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_bsl.html"
+	}, {
+		"line": "Broad Street Subway \/ Broad Ridge Spur",
+		"station": "Spring Garden",
+		"elevator": "Northbound Platform",
+		"message": "No access to\/from northbound platform",
+		"message_html": "<ul><li>No access to\/from northbound platform<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_bsl.html"
+	}, {
+		"line": "Broad Street Subway \/ Broad Ridge Spur",
+		"station": "Spring Garden",
+		"elevator": "Street to Mezzanine",
+		"message": "No access to\/from station",
+		"message_html": "<ul><li>No access to\/from station<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_bsl.html"
+	}, {
+		"line": "Trolley Lines",
+		"station": "13th Street Trolley",
+		"elevator": "13th Street Eastbound MFL Platform",
+		"message": "No access to\/from stationNo access to\/from Market Frankford Line 13th St - eastbound",
+		"message_html": "<ul><li>No access to\/from station<\/li><li>No access to\/from Market Frankford Line 13th St - eastbound<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_sub_surface.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "15th Street",
+		"elevator": "Dilworth Park",
+		"message": "Dilworth Park Elevator Disabled",
+		"message_html": "<ul><li>Dilworth Park Elevator Disabled<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "15th Street",
+		"elevator": "Eastbound",
+		"message": "No access to\/from eastbound platform",
+		"message_html": "<ul><li>No access to\/from eastbound platform<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Market Frankford Line",
+		"station": "15th Street",
+		"elevator": "Westbound",
+		"message": "No access to\/from westbound platform",
+		"message_html": "<ul><li>No access to\/from westbound platform<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_mfl.html"
+	}, {
+		"line": "Broad Street Subway \/ Broad Ridge Spur",
+		"station": "Race-Vine",
+		"elevator": "Street to Mezzanine",
+		"message": "No access to\/from station",
+		"message_html": "<ul><li>No access to\/from station<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_bsl.html"
+	}, {
+		"line": "Broad Street Subway \/ Broad Ridge Spur",
+		"station": "Race-Vine",
+		"elevator": "Northbound",
+		"message": "No access to\/from northbound platform",
+		"message_html": "<ul><li>No access to\/from northbound platform<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_bsl.html"
+	}, {
+		"line": "Broad Street Subway \/ Broad Ridge Spur",
+		"station": "Race-Vine",
+		"elevator": "Southbound",
+		"message": "No access to\/from southbound platform",
+		"message_html": "<ul><li>No access to\/from southbound platform<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_bsl.html"
+	}, {
+		"line": "Trolley Lines",
+		"station": "15th Street Trolley",
+		"elevator": "Plaza to Westbound Concourse",
+		"message": "No access to\/from station at 15th Street StationNo access to MFL, BSL, or Trolleys",
+		"message_html": "<ul><li>No access to\/from station at 15th Street Station<\/li><li>No access to MFL, BSL, or Trolleys<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_sub_surface.html"
+	}, {
+		"line": "Trolley Lines",
+		"station": "15th Street Trolley",
+		"elevator": "Paid Concourse to Eastbound Platform",
+		"message": "No access to\/from easttbound platform",
+		"message_html": "<ul><li>No access to\/from easttbound platform<\/li><\/ul>",
+		"alternate_url": "http:\/\/www.septa.org\/service\/accessible_septa\/alt_service_sub_surface.html"
+	}]
+}

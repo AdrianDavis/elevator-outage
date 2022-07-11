@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+# TEAM: SEPTA Communications Department
+
+    <name> -- <role> -- <twitter>
+	Adrian M. Davis - Digital Platforms Producer -- @AdrianMDavis -- AdrianDavis.net
+
+	
+# THANKS
+
+    Yannick Baudru - IT Project Leader
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, SASS/SCSS, Angular, SVG, Normalize.css, javascript, jQuery, Modernizr

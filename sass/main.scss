@@ -1,0 +1,1632 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+   
+/*
+	Theme Name: Elevator Status Responsive Angular Application
+	Description: A Responsive Handicap Accessible Angular Application
+	Author: Adrian Davis - Digital Platforms Producer
+	Author URI: http://www.septa.org/
+	Tags: Angular, Application, Responsive, Adaptive, Handicap Accessible, Color Blind
+*/
+
+// Google Font
+@import url(https://fonts.googleapis.com/css?family=Oxygen:400,700);
+
+* {
+	transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+	-webkit-transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+	-moz-transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+	-ms-transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+	-o-transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+html,
+body,
+button,
+input,
+select,
+textarea {
+	color: #222;
+	font-family: 'Oxygen', Arial, Helvetica, sans-serif;
+}
+
+html {
+	font-size: 1em;
+	line-height: 1.4;
+	background-color: #ededed;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+	vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+	resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+$mfl: hsl(202, 100%, 38%);
+$bsl: hsl(28, 91%, 55%);
+$trolley: hsl(94, 50%, 39%);
+$nhsl: hsl(296, 63%, 30%);
+$regional-rail: hsl(204, 42%, 40%);
+
+$navy: #000E78;
+$blue: #007dc3;
+$orange: #f58426;
+$green: #5e9732;
+$violet: #781d7e;
+$slate: #3b6e8f;
+$white: #fff;
+
+$colors: $mfl $bsl $trolley $nhsl $regional-rail;
+$line: mfl bsl trolley nhsl regional-rail;
+
+$oneHundred: 100%;
+#container {
+	width: $oneHundred;
+	margin: 0px auto;
+	overflow: hidden;
+	background-color: $white;
+}
+
+nav {
+	background-color: $navy;
+	color: $white;
+	height: 30px;
+	$width: 110px;
+	#logo img {
+		width: $width;
+		height: 20px;
+		margin: .25em 0 0 .25em;
+	}
+	#logo a {width:$width;}
+}
+
+#septa-mobile {display:none;}
+#septa-desktop {display:block;}
+
+#title {
+	background-color: $white;
+	color: $navy;
+	font-weight: bold;
+	font-size: 2.2em;
+	text-align: center;
+}
+
+/*-- Preloader styles --*/
+.loading {display: none;}
+[ng-cloak].loading {display: block !important;}
+.loading {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: navy;
+	color:$white;
+	text-align: center;
+	font-size: 3em;
+	img {
+		width: 50%;
+		height: 50%;
+		margin: 10% auto 2% auto;
+		display: block;
+	}
+}
+
+/*-- User Experience and User Interface Styles --*/
+.success {display:none;}
+
+.operative.success {display:block;}
+
+.operative {background:#00C800;}
+
+.fail {background:#ff0000;}
+
+.fail,
+.operative {
+	font-size: 1em;
+	color:$white;
+	text-align: center;
+	padding: .5em;
+	strong {font-size: 1.25em;}
+	a {color:$white;}
+}
+
+/*-- set up --*/
+main {
+	background-color: $white;
+	overflow:hidden;
+}
+
+article{
+	&:focus .display {
+		background-color: rgba(255,255,255,.25);
+		outline: dotted thin;
+	}
+	&:focus .info {
+		max-height: 999999999999px;
+		transition: .5s ease-out;
+		-webkit-transition: .5s ease-out;
+		-moz-transition: .5s ease-out;
+		-ms-transition: .5s ease-out;
+		-o-transition: .5s ease-out;
+	}
+}
+
+/*---------------------------------------------------- experiment ----------------------------------------------------*/
+//adds color to all displays
+@for $i from 1 through length($line){
+	##{nth($line, $i)} {
+		background-color:#{nth($colors, $i)};
+	}
+}
+
+// adds an icon to every display
+@for $i from 1 through length($line){
+	##{nth($line, $i)} .display:before {
+		background-image: url('../img/#{nth($line, $i)}.svg');
+	}
+}
+
+
+.line {
+	color: $white;
+	width: $oneHundred;
+}
+
+$icon: 40px;
+.display {
+	height: 60px;
+	font-size: 2.2em;
+	font-weight: bold;
+	line-height: 1.67em;
+	
+	&:empty {cursor: hand;}
+	
+	&:before {
+		background-size: $icon $icon;
+		content:'';
+		width: $icon;
+		height: $icon;
+		margin: .3em .2em 0em .2em;
+		float:left;
+	}
+	// remeber to update the fail style
+	&:after,
+	&.error:after{
+		// inactive items are silent - ERM
+		/* background-image: url('../img/error.svg'); */
+		background-size: $icon $icon;
+		content:'';
+		width: $icon;
+		height: $icon;
+		margin: .25em .25em 0em .25em;
+		float:right;
+		text-align: center;
+		line-height:.95em;
+		cursor: default;
+	}
+	
+	// update function that creates content requires this class
+	&.update {cursor: pointer;}
+	&.update:after {
+		content: attr(data-service) !important;
+		background-image: none !important;
+		margin: .47em .25em 0em .25em;
+	}
+	
+	&.good:after {
+		// inactive items are silent - ERM
+		/* background-image: url('../img/check.svg'); */
+		background-size: $icon $icon;
+		content:'';
+		width: $icon;
+		height: $icon;
+		margin: .25em .25em 0em .25em;
+		float:right;
+		text-align: center;
+		line-height:.95em;
+	}
+}
+
+
+.info {
+	font-size:1.5em;
+	overflow:hidden;
+	
+	:empty {display:none;}
+	
+	service-item:nth-child(odd) .service{background-color: rgba(0,0,0,.25);}
+	service-item:nth-child(even) .service{background-color: rgba(0,0,0,0);}
+	
+	.service {
+		// service coloring
+		&:nth-child(odd){background-color: rgba(0,0,0,.25);}
+		&>div:nth-child(odd){background-color: rgba(0,0,0,.25);}
+		
+		// alternating border
+		&:nth-child(even) span > div {border-bottom: 1px solid rgba(0,0,0,.25);}
+		&:nth-child(odd) span > div {border-bottom: 1px solid rgba(225,225,225,.25);}
+		
+		a {color: $white;}
+		
+		div {
+			height: auto;
+			overflow: hidden !important;
+			.wrapper {
+				width: 92.3%;
+				margin: .5em 1em .5em 0;
+				float: right;
+			}
+			.label {
+				font-weight:bold;
+				display:block;
+			}
+		}
+	}
+	
+	.group {
+		.station {}
+		.elevator {}
+		.impact {}
+	}
+	.alt-service {
+		p:first-of-type {margin:0;}
+		height: auto;
+		.details {}
+	}
+	
+	&.close {
+		max-height: 0px;
+		transition: .5s ease-in;
+		-webkit-transition: .5s ease-in;
+		-moz-transition: .5s ease-in;
+		-ms-transition: .5s ease-in;
+		-o-transition: .5s ease-in;
+	}
+	
+	&.open {// repeated in .display:focus
+		max-height: 999999999999px;
+		transition: .5s ease-out;
+		-webkit-transition: .5s ease-out;
+		-moz-transition: .5s ease-out;
+		-ms-transition: .5s ease-out;
+		-o-transition: .5s ease-out;
+	}
+}
+
+footer {
+	background-color: $white;
+	padding: 1em;
+	overflow: hidden;
+	text-align: center;
+	section > span + span {}
+	.notice {margin: 0 0 1em 0;}
+	.copy {
+		font-weight:bold;
+		text-align:center;
+	}
+}
+
+
+/*---- Responsive -------------------------------------------------*/
+
+/*-- Feature phones ---------------------------- */
+
+@media only screen
+ and (max-width : 320px) {
+
+	nav {
+		height: 30px;
+		$width: 110px;
+		#logo img {
+			width: $width;
+			height: 20px;
+			margin: .26em 0 0 .25em;
+		}
+		#logo a {width:$width;}
+	}
+
+	#septa-mobile {display:none;}
+	#septa-desktop {display:block;}
+
+	.fail,
+	.operative {}
+
+	#title {font-size: 2.2em;}
+
+	.line {}
+
+	$icon: 40px;
+	.display {
+		height: 60px;
+		font-size: 2em;
+		line-height: 1.87em;
+		
+		&:before {
+			background-size: $icon $icon;
+			content:'';
+			width: $icon;
+			height: $icon;
+			margin: .3em .2em 0em .2em;
+		}
+		
+		// error style
+		&:after {
+			// inactive items are silent - ERM
+			/* background-image: url('../img/error.svg'); */
+			background-size: $icon $icon;
+			content:'';
+			width: $icon;
+			height: $icon;
+			margin: .25em .25em 0em .25em;
+			line-height:.95em;
+		}
+		// see line 218 for .update:after
+	}
+
+	.info {
+		font-size:1.5em;
+		:empty {display:none;}
+		.service {// for background color info see line 223
+			div {
+				.wrapper {
+					width: 95%;
+					margin: .5em auto;
+					float:none;
+				}
+				.label {}
+			}
+		}
+		.group {
+			.station {}
+			.elevator {}
+			.impact {}
+		}
+		.alt-service {
+			.details {}
+		}
+	}
+
+	footer {
+		section > span + span {display: block;}
+		.notice {}
+		.copy {}
+	}
+
+}
+
+/*-- Feature phones ----------------------------*/
+
+@media only screen 
+and (min-width : 321px)
+and (max-width : 360px) {
+
+	nav {
+		height: 30px;
+		$width: 110px;
+		#logo img {
+			width: $width;
+			height: 20px;
+			margin: .26em 0 0 .25em;
+		}
+		#logo a {width:$width;}
+	}
+
+	#septa-mobile {display:none;}
+	#septa-desktop {display:block;}
+
+	.fail,
+	.operative {}
+
+	#title {font-size: 2.2em;}
+
+	.line {}
+
+	$icon: 40px;
+	.display {
+		height: 60px;
+		font-size: 2em;
+		line-height: 1.87em;
+		
+		&:before {
+			background-size: $icon $icon;
+			content:'';
+			width: $icon;
+			height: $icon;
+			margin: .3em .2em 0em .2em;
+		}
+		
+		// error style
+		&:after {
+			// inactive items are silent - ERM
+			/* background-image: url('../img/error.svg'); */
+			background-size: $icon $icon;
+			content:'';
+			width: $icon;
+			height: $icon;
+			margin: .25em .25em 0em .25em;
+			line-height:.95em;
+		}
+		// see line 218 for .update:after
+	}
+
+	.info {
+		font-size:1.5em;
+		:empty {display:none;}
+		.service {// for background color info see line 223
+			div {
+				.wrapper {
+					width: 82%;
+				margin: .5em .5em .5em 0;
+				}
+				.label {}
+			}
+		}
+		.group {
+			.station {}
+			.elevator {}
+			.impact {}
+		}
+		.alt-service {
+			.details {}
+		}
+	}
+
+	footer {
+		section > span + span {display: block;}
+		.notice {}
+		.copy {}
+	}
+}
+
+/*-- Smartphones ---------------------------------- */
+@media only screen 
+and (min-width : 361px)
+and (max-width : 480px) {
+
+	nav {
+		height: 40px;
+		$width: 147px;
+		#logo img {
+			width: $width;
+			height: 27px;
+			margin: .45em 0 0 .45em;
+		}
+		#logo a {width:$width;}
+	}
+
+	#septa-mobile {display:none;}
+	#septa-desktop {display:block;}
+
+	.fail,
+	.operative {font-size: 1.5em;}
+
+	#title {font-size: 3.1em;}
+
+	.line {}
+
+	$icon: 50px;
+	.display {
+		height: 70px;
+		font-size: 2.2em;
+		line-height: 1.9em;
+		
+		&:before {
+			background-size: $icon $icon;
+			content:'';
+			width: $icon;
+			height: $icon;
+			margin: .3em .2em 0em .2em;
+		}
+		
+		// error style
+		&:after {
+			// inactive items are silent - ERM
+			/* background-image: url('../img/error.svg'); */
+			background-size: $icon $icon;
+			content:'';
+			width: $icon;
+			height: $icon;
+			margin: .25em .25em 0em .25em;
+			line-height:.95em;
+		}
+		// see line 218 for .update:after
+	}
+
+	.info {
+		font-size:2em;
+		:empty {display:none;}
+		.service {// for background color info see line 223
+			div {
+				.wrapper {
+					width: 85%;
+					float: right;
+					margin: .5em .3em .5em 0;
+				}
+				.label {}
+			}
+		}
+		.group {
+			.station {}
+			.elevator {}
+			.impact {}
+		}
+		.alt-service {
+			.details {}
+		}
+	}
+
+	footer {
+		section > span + span {display: block;}
+		.notice {}
+		.copy {}
+	}
+}
+
+/*-- Small Tablets and Smartphones ----------- */
+@media only screen 
+and (min-width : 481px)
+and (max-width : 640px) {
+
+	nav {
+		height: 60px;
+		$width: 196px;
+		#logo img {
+			width: $width;
+			height: 36px;
+			margin: .75em 0 0 .75em;
+		}
+		#logo a {width:$width;}
+	}
+
+	#septa-mobile {display:none;}
+	#septa-desktop {display:block;}
+
+	.fail,
+	.operative {font-size: 2em;}
+
+	#title {font-size: 4.04em;}
+
+	.line {}
+
+	$icon: 48px;
+	.display {
+		height: 90px;
+		font-size: 3.13em;
+		line-height: 1.7em;
+		$top: .4em;
+		&:before {
+			background-size: $icon $icon;
+			content:'';
+			width: $icon;
+			height: $icon;
+			margin: $top .25em 0em .25em;
+		}
+		
+		// error style
+		&:after {
+			// inactive items are silent - ERM
+			/* background-image: url('../img/error.svg'); */
+			background-size: $icon $icon;
+			content:'';
+			width: $icon;
+			height: $icon;
+			margin: $top .25em 0em .25em;
+			line-height:.95em;
+		}
+		
+		// function that creates content requires this class
+		&.update:after {
+			content: attr(data-service) !important;
+			background-image: none !important;
+			margin: .35em .5em 0em .25em;
+		}
+		
+		&.good:after {
+			// inactive items are silent - ERM
+			/* background-image: url('../img/check.svg'); */
+			background-size: $icon $icon;
+			content:'';
+			width: $icon;
+			height: $icon;
+			margin: $top .25em 0em .25em;
+			line-height:.95em;
+		}
+	}
+
+	.info {
+		font-size:2em;
+		:empty {display:none;}
+		.service {// for background color info see line 223
+			div {
+				.wrapper {
+					width: 85%;
+					float: right;
+					margin: .5em .5em .5em 0;
+				}
+				.label {}
+			}
+		}
+		.group {
+			.station {}
+			.elevator {}
+			.impact {}
+		}
+		.alt-service {
+			.details {}
+		}
+	}
+
+	footer {
+		.notice {}
+		.copy {}
+	}
+
+}
+
+@media only screen 
+and (min-width : 641px)
+and (max-width : 767px) {
+// last mobile style
+	#container {width: 95%;}
+	nav {
+		height: 65px;
+		$width: 235px;
+		#logo img {
+			width: $width;
+			height: 43px;
+			margin: .75em 0 0 .75em;
+		}
+		#logo a {width:$width;}
+	}
+
+	#septa-mobile {display:none;}
+	#septa-desktop {display:block;}
+
+	.fail,
+	.operative {font-size: 1.25em;}
+
+	#title {font-size: 5.1em;}
+
+	.line {}
+
+	$icon: 64px;
+	.display {
+		height: 107px;
+		font-size: 4em;
+		line-height: 1.6em;
+		
+		&:before {
+			background-size: $icon $icon;
+			content:'';
+			width: $icon;
+			height: $icon;
+			margin: .35em .2em 0em .2em;
+		}
+		
+		// error style
+		&:after {
+			// inactive items are silent - ERM
+			/* background-image: url('../img/error.svg'); */
+			background-size: $icon $icon;
+			content:'';
+			width: $icon;
+			height: $icon;
+			margin: .3em .25em 0em .25em;
+			line-height:.95em;
+		}
+		
+		// function that creates content requires this class
+		&.update:after {
+			content: attr(data-service) !important;
+			background-image: none !important;
+			margin: .32em .5em 0em .25em;
+		}
+		
+		&.good:after {
+			// inactive items are silent - ERM
+			/* background-image: url('../img/check.svg'); */
+			background-size: $icon $icon;
+			content:'';
+			width: $icon;
+			height: $icon;
+			margin: .3em .25em 0em .25em;
+			line-height:.95em;
+		}
+	}
+
+	$column: 80%; //
+	.info {
+		font-size:1.5em;
+		:empty {display:none;}
+		.service {// for background color info see line 223
+			// alternating border
+			&:nth-child(even) span > div {border:none;}
+			&:nth-child(odd) span > div {border:none;}
+			
+			// do not delete
+			overflow:hidden !important;
+			div {
+				.wrapper {
+					width:auto;
+					//width: 85%;
+					float: none;
+					margin:0 0 .5em 0;
+				}
+				.label {}
+		}
+		
+		.group {
+			width:$column;
+			margin: .5em 0 0 12.5%;
+			float: left;}
+			.station {}
+			.elevator {}
+			.impact {
+				& div span + span {display:block;}
+			}
+		}
+		.alt-service {
+			width: $column;
+			//width: 350px;
+			margin: .5em 0 .5em 12.5%;
+			float: left;
+			.details {}
+		}
+	}
+
+	footer {
+		.notice {}
+		.copy {}
+	}
+
+}
+
+/*-- Tablets and Small Desktops ----------- */
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 1024px) {
+	// last mobile style - first small desktop
+	#container {width: 95%;}
+	
+	nav {
+		height: 103px;
+		$width: 314px;
+		#logo img {
+			width: $width;
+			height: 57px;
+			margin: 1.5em 0 0 1.5em;
+		}
+		#logo a {width:$width;}
+	}
+
+	#septa-mobile {display:none;}
+	#septa-desktop {display:block;}
+
+	.fail,
+	.operative {font-size: 1.75em;}
+
+	#title {font-size: 6.21em;}
+
+	.line {}
+
+	$icon: 64px;
+	.display {
+		height: 100px;
+		font-size: 4.68em;
+		line-height: 1.3em;
+		$top: .25em;
+		&:before {
+			background-size: $icon $icon;
+			content:'';
+			width: $icon;
+			height: $icon;
+			margin: $top .2em 0em .2em;
+		}
+		
+		// error style
+		&:after {
+			// inactive items are silent - ERM
+			/* background-image: url('../img/error.svg'); */
+			background-size: $icon $icon;
+			content:'';
+			width: $icon;
+			height: $icon;
+			margin: $top .25em 0em .25em;
+			line-height:.95em;
+		}
+		
+		// function that creates content requires this class
+		&.update:after {
+			content: attr(data-service) !important;
+			background-image: none !important;
+			margin: .175em .5em 0em .25em;
+		}
+		
+		&.good:after {
+			// inactive items are silent - ERM
+			/* background-image: url('../img/check.svg'); */
+			background-size: $icon $icon;
+			content:'';
+			width: $icon;
+			height: $icon;
+			margin: $top .25em 0em .25em;
+			line-height:.95em;
+		}
+	}
+
+	$column: 80%; //
+	.info {
+		font-size:1.5em;
+		:empty {display:none;}
+		.service {// for background color info see line 223
+			// alternating border
+			&:nth-child(even) span > div {border:none;}
+			&:nth-child(odd) span > div {border:none;}
+			
+			// do not delete
+			overflow:hidden !important;
+			div {
+				.wrapper {
+					width:auto;
+					float: none;
+					margin:0 0 .5em 0;
+				}
+				.label {}
+		}
+		
+		.group {
+			width:$column;
+			margin: .5em 0 0 10.3%;
+			float: left;}
+			.station {}
+			.elevator {}
+			.impact {
+				& div span + span {display:block;}
+			}
+		}
+		.alt-service {
+			width: $column;
+			margin: .5em 0 .5em 10.3%;
+			float: left;
+			.details {}
+		}
+	}
+
+	footer {
+		.notice {}
+		.copy {}
+	}
+
+}
+
+/*-- Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1025px)
+and (max-width : 1279px) {
+
+	#container {width: 80%;}
+	nav {
+		height: 103px;
+		$width: 314px;
+		#logo img {
+			width: $width;
+			height: 57px;
+			margin: 1.5em 0 0 1.5em;
+		}
+		#logo a {width:$width;}
+	}
+
+	#septa-mobile {display:none;}
+	#septa-desktop {display:block;}
+
+	.fail,
+	.operative {font-size: 1.75em;}
+
+	#title {font-size: 6.6em;}
+
+	.line {}
+
+	$icon: 85px;
+	.display {
+		height: 142px;
+		font-size: 5.1em;
+		line-height: 1.7em;
+		
+		&:before {
+			background-size: $icon $icon;
+			content:'';
+			width: $icon;
+			height: $icon;
+			margin: .35em .2em 0em .2em;
+		}
+		
+		// error style
+		&:after {
+			// inactive items are silent - ERM
+			/* background-image: url('../img/error.svg'); */
+			background-size: $icon $icon;
+			content:'';
+			width: $icon;
+			height: $icon;
+			margin: .3em .25em 0em .25em;
+			line-height:.95em;
+		}
+		
+		// function that creates content requires this class
+		&.update:after {
+			content: attr(data-service) !important;
+			background-image: none !important;
+			margin: .35em .4em 0em .25em;
+		}
+		
+		&.good:after {
+			// inactive items are silent - ERM
+			/* background-image: url('../img/check.svg'); */
+			background-size: $icon $icon;
+			content:'';
+			width: $icon;
+			height: $icon;
+			margin: .3em .25em 0em .25em;
+			line-height:.95em;
+		}
+	}
+
+	$column: 80%;
+	.info {
+		font-size:1.5em;
+		:empty {display:none;}
+		.service {// for background color info see line 223
+			// alternating border
+			&:nth-child(even) span > div {border:none;}
+			&:nth-child(odd) span > div {border:none;}
+			
+			// do not delete
+			overflow:hidden !important;
+			div {
+				.wrapper {
+					width:auto;
+					float: none;
+					margin:0 0 .5em 0;
+				}
+				.label {}
+		}
+		
+		.group {
+			width:$column;
+			margin: .5em 0 0 12%;
+			float: left;}
+			.station {}
+			.elevator {}
+			.impact {
+				& div span + span {display:block;}
+			}
+		}
+		.alt-service {
+			width: $column;
+			margin: .5em 0 .5em 12%;
+			float: left;
+			.details {}
+		}
+	}
+
+	footer {
+		.notice {}
+		.copy {}
+	}
+
+}
+
+/*-- Large Desktops and TV Screens ----------------------------*/
+@media only screen
+and (min-width : 1280px)
+and (max-width : 1499px) {
+
+	#container {width: 80%;}
+	nav {
+		height: 125px;
+		$width: 460px;
+		#logo img {
+			width: $width;
+			height: 84px;
+			margin: 1.5em 0 0 1.5em;
+		}
+		#logo a {width:$width;}
+	}
+
+	#septa-mobile {display:none;}
+	#septa-desktop {display:block;}
+
+	.fail,
+	.operative {font-size: 2em;}
+
+	#title {font-size: 6.6em;}
+
+	.line {}
+
+	$icon: 85px;
+	.display {
+		height: 142px;
+		font-size: 5.1em;
+		line-height: 1.7em;
+		
+		&:before {
+			background-size: $icon $icon;
+			content:'';
+			width: $icon;
+			height: $icon;
+			margin: .35em .2em 0em .2em;
+		}
+		
+		// error style
+		&:after {
+			// inactive items are silent - ERM
+			/* background-image: url('../img/error.svg'); */
+			background-size: $icon $icon;
+			content:'';
+			width: $icon;
+			height: $icon;
+			margin: .3em .25em 0em .25em;
+			line-height:.95em;
+		}
+		
+		// function that creates content requires this class
+		&.update:after {
+			content: attr(data-service) !important;
+			background-image: none !important;
+			margin: .35em .4em 0em .25em;
+		}
+		
+		&.good:after {
+			// inactive items are silent - ERM
+			/* background-image: url('../img/check.svg'); */
+			background-size: $icon $icon;
+			content:'';
+			width: $icon;
+			height: $icon;
+			margin: .3em .25em 0em .25em;
+			line-height:.95em;
+		}
+	}
+
+	$column: 80%;
+	.info {
+		font-size:1.5em;
+		:empty {display:none;}
+		.service {// for background color info see line 223
+			// alternating border
+			&:nth-child(even) span > div {border:none;}
+			&:nth-child(odd) span > div {border:none;}
+			
+			// do not delete
+			overflow:hidden !important;
+			div {
+				.wrapper {
+					width:auto;
+					float: none;
+					margin:0 0 .5em 0;
+				}
+				.label {}
+			}
+		
+		.group {
+			width:$column;
+			margin: .5em 0 0 10.4%;
+			float: left;}
+			.station {}
+			.elevator {}
+			.impact {
+				& div span + span {display:block;}
+			}
+		}
+		.alt-service {
+			width: $column;
+			margin: .5em 0 .5em 10.4%;
+			float: left;
+			.details {}
+		}
+	}
+
+	footer {
+		.notice {}
+		.copy {}
+	}
+}
+
+
+/*-- Large Desktops and TV Screens ----------------------------*/
+@media only screen
+and (min-width : 1500px)
+and (max-width : 1920px) {
+
+	#container {width: 80%;}
+	nav {
+		height: 125px;
+		$width: 460px;
+		#logo img {
+			width: $width;
+			height: 84px;
+			margin: 1.5em 0 0 1.5em;
+		}
+		#logo a {width:$width;}
+	}
+
+	#septa-mobile {display:none;}
+	#septa-desktop {display:block;}
+
+	.fail,
+	.operative {font-size: 2.5em;}
+
+	#title {font-size: 6.6em;}
+
+	.line {}
+
+	$icon: 85px;
+	.display {
+		height: 142px;
+		font-size: 6.3em;
+		line-height: 1.5em;
+		
+		&:before {
+			background-size: $icon $icon;
+			content:'';
+			width: $icon;
+			height: $icon;
+			margin: .35em .2em 0em .2em;
+		}
+		
+		// error style
+		&:after {
+			// inactive items are silent - ERM
+			/* background-image: url('../img/error.svg'); */
+			background-size: $icon $icon;
+			content:'';
+			width: $icon;
+			height: $icon;
+			margin: .3em .25em 0em .25em;
+			line-height:.95em;
+		}
+		
+		// function that creates content requires this class
+		&.update:after {
+			content: attr(data-service) !important;
+			background-image: none !important;
+			margin: .27em .6em 0em .25em;
+		}
+		
+		&.good:after {
+			// inactive items are silent - ERM
+			/* background-image: url('../img/check.svg'); */
+			background-size: $icon $icon;
+			content:'';
+			width: $icon;
+			height: $icon;
+			margin: .3em .25em 0em .25em;
+			line-height:.95em;
+		}
+	}
+
+	$column: 80%;
+	.info {
+		font-size:1.5em;
+		:empty {display:none;}
+		.service {// for background color info see line 223
+			// alternating border
+			&:nth-child(even) span > div {border:none;}
+			&:nth-child(odd) span > div {border:none;}
+			
+			// do not delete
+			overflow:hidden !important;
+			div {
+				.wrapper {
+					width:auto;
+					float: none;
+					margin:0 0 .5em 0;
+				}
+				.label {}
+			}
+		
+		.group {
+			width:$column;
+			margin: .5em 0 0 8.7%;
+			float: left;}
+			.station {}
+			.elevator {}
+			.impact {
+				& div span + span {display:block;}
+			}
+		}
+		.alt-service {
+			width: $column;
+			margin: .5em 0 .5em 8.7%;
+			float: left;
+			.details {}
+		}
+	}
+
+	footer {
+		.notice {}
+		.copy {}
+	}
+}
+
+
+
+/*-- Dual Monitors and TV Screens ----------------------------*/
+@media only screen
+and (min-width : 1921px) {
+	#container {width: 100%;}
+	nav {
+		height: 125px;
+		$width: 460px;
+		#logo img {
+			width: $width;
+			height: 84px;
+			margin: 1.5em 0 0 1.5em;
+		}
+		#logo a {width:$width;}
+	}
+
+	#septa-mobile {display:none;}
+	#septa-desktop {display:block;}
+
+	.fail,
+	.operative {font-size: 3em;}
+
+	#title {font-size: 6.6em;}
+
+	.line {
+		width:50%;
+		float: left;
+	}
+
+	$icon: 85px;
+	.display {
+		height: 142px;
+		font-size: 6.3em;
+		line-height: 1.5em;
+		
+		&:before {
+			background-size: $icon $icon;
+			content:'';
+			width: $icon;
+			height: $icon;
+			margin: .35em .2em 0em .2em;
+		}
+		
+		// error style
+		&:after {
+			// inactive items are silent - ERM
+			/* background-image: url('../img/error.svg'); */
+			background-size: $icon $icon;
+			content:'';
+			width: $icon;
+			height: $icon;
+			margin: .3em .25em 0em .25em;
+			line-height:.95em;
+		}
+		
+		// function that creates content requires this class
+		&.update:after {
+			content: attr(data-service) !important;
+			background-image: none !important;
+			margin: .27em .25em 0em .25em;
+		}
+		
+		&.good:after {
+			// inactive items are silent - ERM
+			/* background-image: url('../img/check.svg'); */
+			background-size: $icon $icon;
+			content:'';
+			width: $icon;
+			height: $icon;
+			margin: .3em .25em 0em .25em;
+			line-height:.95em;
+		}
+	}
+
+	$column: 80%;
+	.info {
+		font-size:1.5em;
+		:empty {display:none;}
+		.service {// for background color info see line 223
+			// alternating border
+			&:nth-child(even) span > div {border:none;}
+			&:nth-child(odd) span > div {border:none;}
+			
+			// do not delete
+			overflow:hidden !important;
+			div {
+				.wrapper {
+					width:auto;
+					float: none;
+					margin:0 0 .5em 0;
+				}
+				.label {}
+			}
+		
+		.group {
+			width:$column;
+			margin: .5em 0 0 8.7%;
+			float: left;}
+			.station {}
+			.elevator {}
+			.impact {
+				& div span + span {display:block;}
+			}
+		}
+		.alt-service {
+			width: $column;
+			margin: .5em 0 .5em 8.7%;
+			float: left;
+			.details {}
+		}
+	}
+
+	footer {
+		width: 100%;
+		.notice {}
+		.copy {}
+	}
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+	background-color: transparent;
+	border: 0;
+	overflow: hidden;
+	/* IE 6/7 fallback */
+	*text-indent: -9999px;
+}
+
+.ir:before {
+	content: "";
+	display: block;
+	width: 0;
+	height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+	display: none !important;
+	visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+	visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *	`contenteditable` attribute is included anywhere else in the document.
+ *	Otherwise it causes space to appear at the top and bottom of elements
+ *	that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *	`:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+	*zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media print,
+	   (-o-min-pixel-ratio: 5/4),
+	   (-webkit-min-pixel-ratio: 1.25),
+	   (min-resolution: 120dpi) {
+	/* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+	* {
+		background: transparent !important;
+		color: #000 !important; /* Black prints faster: h5bp.com/s */
+		box-shadow: none !important;
+		text-shadow: none !important;
+	}
+
+	a,
+	a:visited {
+		text-decoration: underline;
+	}
+
+	a[href]:after {
+		content: " (" attr(href) ")";
+	}
+
+	abbr[title]:after {
+		content: " (" attr(title) ")";
+	}
+
+	/*
+	 * Don't show links for images, or javascript/internal links
+	 */
+
+	.ir a:after,
+	a[href^="javascript:"]:after,
+	a[href^="#"]:after {
+		content: "";
+	}
+
+	pre,
+	blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
+
+	thead {
+		display: table-header-group; /* h5bp.com/t */
+	}
+
+	tr,
+	img {
+		page-break-inside: avoid;
+	}
+
+	img {
+		max-width: 100% !important;
+	}
+
+	@page {
+		margin: 0.5cm;
+	}
+
+	p,
+	h2,
+	h3 {
+		orphans: 3;
+		widows: 3;
+	}
+
+	h2,
+	h3 {
+		page-break-after: avoid;
+	}
+}

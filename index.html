@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>SEPTA.org | Elevator Status</title>
+		<meta name="description" content="SEPTA Eelevator Status Web Application: Information on this page is updated daily and also may be heard through our 24-hour elevator status hotline at 877-737-8248">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="app/js/vendor/modernizr-2.6.2.min.js"></script>
+
+		<!-- angular -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
+		<script src="app/lib/angular/angular-aria.min.js"></script>
+		<script src="app/lib/angular/angular-resource.min.js"></script>
+
+		<!-- angular backup -->
+		<script>window.angular || document.write('<script src="app/lib/angular/angular.min.js"><\/script>')</script>
+
+		<!-- elevator status app -->
+		<script src="app/app.js"></script>
+
+		<!-- controllers -->
+		<script src="app/controllers/uiController.js"></script>
+		<script src="app/controllers/elevatorController.js"></script>
+		<script src="app/controllers/messageController.js"></script>
+
+		<!-- directives -->
+		<script src="app/directives/serviceItemDirective.js"></script>
+		<script src="app/directives/altServiceDirective.js"></script>
+
+		<!-- services -->
+		<script src="app/services/dataService.js"></script>
+		<script src="app/services/messageService.js"></script>
+
+		<!-- filters -->
+		<script src="app/filters/htmlCleanUpFilter.js"></script>
+		<script src="app/filters/dateFormatFilter.js"></script>
+		
+		<style>
+			.loading {display: none;}
+			[ng-cloak].loading {display: block !important;}
+			.loading {
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 100%;
+				background-color: navy;
+				color:$white;
+				text-align: center;
+				font-size: 3em;
+				overflow:hidden;
+			}
+			.loading img {
+				width: 50%;
+				height: 50%;
+				margin: 10% auto 2% auto;
+				display: block;
+				animation: float 3s ease-out infinite;
+			}
+			@keyframes float {
+				50% { transform: translate(0%, 5%);}
+			}
+		</style>
+	</head>
+	<body ng-app="elevatorStatus" ng-controller="elevatorCtrl">
+		<!--[if lt IE 7]>
+			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+		<div class="loading" ng-cloak>
+			<img src="img/septa-loading.svg" onerror="this.error=null;this.src='img/septa-loading.png'" />
+			<strong>Loading Elevators Status</strong>
+		</div>
+		<div id="container" ng-controller="uiCtrl">
+			<header role="banner">
+				<nav role="navigation" tabindex="0">
+					<span id="logo"><!-- logo switches links depending on media queries -->
+						<a id="septa-mobile" href="http://m.septa.org/" title="SEPTA.org Mobile" alt="South Eastern Pennsylvania Transportation Authority Mobile Website"><img src="img/septa-logo.svg" onerror="this.error=null;this.src='img/septa-logo.png'" title="SEPTA.org" alt="SEPTA SVG Logo"/></a>
+						<a id="septa-desktop" href="http://www.septa.org/" title="SEPTA.org" alt="South Eastern Pennsylvania Transportation Authority Website"><img src="img/septa-logo.svg" onerror="this.error=null;this.src='img/septa-logo.png'"/></a>
+					</span>
+				</nav>
+				<section id="title">Elevator Status</section>
+				<div ng-if="data.meta.elevators_out === 0" ng-class="success" class="operative" ng-cloak><strong>All Elevators are Operational</strong><br />Please check back for updates</div>
+				<div ng-class="success" class="fail" ng-cloak><strong>Currently our system is down and data is unavailible.</strong><br />Please check back for updates</div>
+			</header>
+
+				<article id="mfl" class="line" tabindex="1" role="article">
+					<section data-service="{{mfl}}" ng-class="lineStatus(mfl)" class="display" role="button" ng-cloak>MFL</section>
+					<section class="info open">
+						<service-item ng-if="result.line == '69th Street North Bus Terminal'" ng-repeat="result in results"></service-item>
+						<service-item ng-if="result.line == 'Market Frankford Line'" ng-repeat="result in results"></service-item>
+					</section>
+				</article>
+
+				<article id="bsl" class="line" tabindex="2" role="article">
+					<section data-service="{{bsl}}" ng-class="lineStatus(bsl)" class="display" role="button" ng-cloak>BSL</section>
+					<section class="info open">
+						<service-item ng-if="result.line == 'Broad Street Subway / Broad Ridge Spur'" ng-repeat="result in results"></service-item>
+					</section>
+				</article>
+
+				<article id="trolley" class="line" tabindex="3" role="article">
+					<section data-service="{{trolley}}" ng-class="lineStatus(trolley)" class="display" role="button" ng-cloak>Trolley</section>
+					<section class="info open">
+						<service-item ng-if="result.line == 'Trolley Lines'" ng-repeat="result in results"></service-item>
+					</section>
+				</article>
+
+				<article id="nhsl" class="line" tabindex="4" role="article">
+					<section data-service="{{nhsl}}" ng-class="lineStatus(nhsl)" class="display" role="button" ng-cloak>NHSL</section>
+					<section class="info open">
+						<service-item ng-if="result.line == 'Norristown High Speed Line'" ng-repeat="result in results"></service-item>
+					</section>
+				</article>
+
+				<article id="regional-rail" class="line" tabindex="5" role="article">
+					<section data-service="{{rail}}" ng-class="lineStatus(rail)" class="display" role="button" ng-cloak>Regional Rail</section>
+					<section class="info open">
+						<service-item ng-if="result.line == 'Regional Rail'" ng-repeat="result in results"></service-item>
+					</section>
+				</article>
+			</main>
+
+			<footer role="contentinfo">
+				<section><span><strong>Elevators Out: </strong>{{ data.meta.elevators_out }}</span> <span><strong>Updated: </strong>{{ updated | dateFormat | date: 'medium' }}</span></section>
+				<section class="notice">Information on this page is updated daily and also may be heard through our <strong>24-hour Elevator Status hotline at <a href="tel:+8777378248" tabindex="6">877-737-8248</a>.</strong></section>
+				<section class="copy">&copy; SEPTA 2017, All Rights Reserved</section>
+			</footer>
+		</div>
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="app/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+		<script src="app/js/plugins.js"></script>
+		<script src="app/js/main.js"></script>
+
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+		<script>
+			(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+			function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+			e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+			e.src='//www.google-analytics.com/analytics.js';
+			r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+			ga('create','UA-10756839-1');ga('send','pageview');
+		</script>
+	</body>
+</html>

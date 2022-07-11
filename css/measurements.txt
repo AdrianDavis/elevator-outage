@@ -1,0 +1,111 @@
+/*-- measurements --*/
+/*-- 360 --*/
+closed
+header 36px
+nav w100% h30px
+septa logo w110px h20px
+before icon size 30px
+after icon size 35px
+font size 36px
+display size w100% h50px
+
+open
+font size 24px
+
+/*-- 480 --*/
+closed
+header 48px
+nav w100% h40px
+septa logo w147x h27px
+before icon size 40px
+after icon size 35px
+font size 48px
+display size w100% h67px
+
+open
+font size 32px
+
+/*-- 640 --*/
+closed
+header 64px
+nav w100% h55px
+septa logo w196px h36px
+before icon size 55px
+after icon size 50px
+font size bold 48px
+font size 36px
+display size w100% h90px
+
+open
+font size bold 48px
+font size 36px
+
+/*-- 767 --*/
+closed
+header 77px
+nav w100% h64px
+septa logo w235px h43px
+before icon size 64px
+after icon size none
+display size w100% h107px
+font size bold 24px
+font size 18px
+service/altservice w350px
+
+/*-- 1024 --*/
+closed
+header 103px
+nav w100% h85px
+septa logo w314px h57px
+before icon size 85px
+after icon size none
+display size w100% h142px
+font size bold 32px
+font size 24px
+service/altservice 254px 350px
+
+
+/*-- 1279 --*/
+closed
+header 150px
+nav w100% h125px
+septa logo w460px h84px
+before icon size 125px
+after icon size none
+display size w100% h209px
+font size bold 40px
+font size 30px
+service/altservice 373px 683px
+
+
+/*-- 1500 --*/
+closed
+header 150px
+nav w100% h125px
+septa logo w460px h84px
+before icon size 125px
+after icon size none
+display size w100% h209px
+font size bold 47px
+font size 35px
+service/altservice 373px 683px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

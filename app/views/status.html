@@ -1,0 +1,35 @@
+<section class="service">
+	<span class="group">
+	<!-- station -->
+		<div class="station">
+			<div class="wrapper">
+				<span class="label">Station: </span>
+				<span ng-bind-html="result.station | htmlCleanUp"></span>
+			</div>
+		</div>
+		
+	<!-- elevator -->
+		<div class="elevator">
+			<div class="wrapper">
+				<span class="label">Elevator: </span>
+				<span ng-bind-html="result.elevator | htmlCleanUp"></span>
+			</div>
+		</div>
+		
+	<!-- impact -->
+		<div class="impact">
+			<div class="wrapper">
+				<span class="label">Impact: </span>
+				<span ng-bind-html="result.message | htmlCleanUp"></span>
+			</div>
+		</div>
+	</span>
+	
+	<!-- alternavtive service -->
+	<div class="alt-service">
+		<div class="wrapper">
+			<span class="label">Alternative Service: </span>
+			<alt-service ng-controller="alternativeCtrl" ></alt-service>
+		</div>
+	</div>
+</section>
